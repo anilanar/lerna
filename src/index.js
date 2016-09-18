@@ -1,3 +1,4 @@
+import BumpVersionCommand from "./commands/BumpVersionCommand";
 import BootstrapCommand from "./commands/BootstrapCommand";
 import PublishCommand from "./commands/PublishCommand";
 import UpdatedCommand from "./commands/UpdatedCommand";
@@ -19,7 +20,8 @@ export const __commands__ = {
   init: InitCommand,
   run: RunCommand,
   exec: ExecCommand,
-  ls: LsCommand
+  ls: LsCommand,
+  bump: BumpVersionCommand
 };
 
 import PackageUtilities from "./PackageUtilities";
